@@ -1,0 +1,13 @@
+field_mapping:
+  handle: "Handle"
+  title: "Title"
+  description_html: "Body (HTML)"
+  vendor: "Vendor"
+  category: "Product Category"
+  sku: "Variant SKU"
+  barcode: "Variant Barcode"
+  inventory_quantity: "Variant Inventory Qty"
+  price: "Variant Price"
+  compare_at_price: "Variant Compare At Price"
+  image_url: "Image Src"
+  status: "Status"
