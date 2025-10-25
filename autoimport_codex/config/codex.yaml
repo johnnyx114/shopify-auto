@@ -1,0 +1,23 @@
+codex_version: 1.0
+description: >
+  Fiske & Jakt AutoImporter Codex.
+  Bygger komplett pipeline fra CSV til Shopify API.
+
+shopify_store_url: "dinbutikk.myshopify.com"
+shopify_token: "shpat_din_token_her"
+
+inventory_rules:
+  match_by: ["sku", "barcode"]
+  set_inventory_exact: true
+  skip_if_no_change: true
+
+ai_content:
+  generate_if_missing: true
+  model: gpt-5
+  tone: informative_rustic
+  seo_language: norwegian
+  compliance_filter:
+    exclude_words: ["overvåkning", "sikkerhet", "forsvar", "militær"]
+
+logging:
+  output_dir: data/logs/
